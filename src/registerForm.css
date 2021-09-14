@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* MAIN BOX */
+
+.main-container {
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+}
+
+h1 {
+    font-size: 2em;
+    color: #023870;
+    margin: 5px;
+    font-family: 'K2D', sans-serif;
+}
+
+
+/* FORM ONLY */
+
+.form-container {
+    padding: 10px;
+    width: 50%;
+}
+
+.head-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+label {
+    color: rgb(78, 76, 76);
+    font-size: 15px;
+}
+
+.half-left {
+    display: flex;
+    justify-content: left;
+    width: 35%;
+    margin: 2px;
+    padding: 10px;
+    font-size: 0.95em;
+    font-weight: 550;
+}
+
+.half-right {
+    justify-content: right;
+    width: 65%;
+    font-size: 0.95em;
+}
+
+.half-right input {
+    border: 1px solid rgba(128, 128, 128, 0.432);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 550;
+    box-shadow: none;
+    color: rgb(70, 68, 68);
+    font-weight: 700;
+}
+
+.half-right input:focus {
+    border-color: #023870;
+    box-shadow: 2px 2px 1px 1px rgba(128, 128, 128, 0.13);
+}
+
+.half-right textarea {
+    border: 1px solid rgba(128, 128, 128, 0.432);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 700;
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    color: rgb(70, 68, 68);
+}
+
+.half-right input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.half-right input[type=radio] {
+    border: 0px;
+    width: 50%;
+    height: 1.5em;
+    /* margin-top: 15px; */
+}
+
+.radio-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 5em;
+    padding-top: 6px;
+}
+
+.radio-check {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    flex-basis: 100%;
+}
+
+.radio-check label {
+    text-align: center;
+}
+
+.error-row {
+    display: flex;
+    justify-content: right;
+}
+
+.error-label {
+    box-shadow: 0px 2px 5px 0px rgba(80, 76, 76, 0.911);
+    border-radius: 5px;
+    text-align: left;
+    color: #023870;
+    font-weight: 550;
+    padding: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+.submit-box {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    width: 65%;
+}
+
+button {
+    margin-top: 20px;
+    color: #023870;
+    border: 3px solid #023870;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 5px 5px solid rgba(7, 6, 6, 0.685);
+}
+
+@media screen and (max-width: 720px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-container {
+        width: 100%;
+    }
+    .rows {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .head-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .error-row {
+        display: flex;
+        justify-content: left;
+    }
+    .footer {
+        display: flex;
+        justify-content: left;
+        /* width: 100%; */
+    }
+    .submit-box {
+        justify-content: left;
+    }
+    .table-container {
+        width: 100%;
+    }
+    .form-data td {
+        font-size: 12px;
+    }
+    .form-data th {
+        font-size: 9px;
+    }
+}
+
+
+/* TABLE ONLY */
+
+.table-container {
+    /* border: 2px solid yellow; */
+    /* width: 50%; */
+    padding: 10px;
+}
+
+.form-data {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.form-data td {
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 15px;
+    background-color: lightseagreen;
+    color: white;
+    width: 14.28%;
+    text-align: center;
+}
+
+.form-data th {
+    border: 1px solid black;
+    font-size: 12px;
+    padding: 5px;
+}
